@@ -1,0 +1,69 @@
+<!--
+Створи веб-сторінку за макетом hw2.4: розмісти 5 блоків однакового розміру та будь якого кольору.
+Всередині кожного блоку додай назву шрифта, та застилізуй текст зазначеним шрифтом
+('Rubik Pixels','Sedgwick Ave Display', 'Dancing Script',  'Fjalla One', 'Indie Flower')
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Indie+Flower&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+          body{
+              margin: 0;
+          }
+          .boxes{
+            display: flex;
+            justify-content: space-around;
+            margin: 5px;
+          }
+          .box{
+            width: 200px;
+            height: 200px;
+            background-color: #ff0099;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .rubik-pixels-regular {
+            font-family: "Rubik Pixels", system-ui;
+            font-weight: 500;
+            font-style: normal;
+          }
+          .sedgwick-ave-display-regular {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-weight: 400;
+            font-style: normal;
+          }
+          .dancing-script-500 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+          }
+          .fjalla-one-regular {
+            font-family: "Fjalla One", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+          .indie-flower-regular {
+            font-family: "Indie Flower", cursive;
+            font-weight: 500;
+            font-style: normal;
+          }
+    </style>
+
+</head>
+<body>
+  <div class="boxes">
+    <div class="box rubik-pixels-regular">Rubik Pixels</div>
+    <div class="box sedgwick-ave-display-regular">Sedgwick Ave Display</div>
+    <div class="box dancing-script-500">Dancing Script</div>
+    <div class="box fjalla-one-regular">Fjalla One</div>
+    <div class="box indie-flower-regular">Indie Flower</div>
+  </div>
+</body>
+</html>
