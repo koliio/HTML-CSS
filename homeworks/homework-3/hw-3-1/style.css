@@ -1,0 +1,40 @@
+body{
+    margin: 2%;
+}
+
+header{
+    height: 60vh;
+    background-color: #2727d5;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.wrapper section{
+    height: 50vh;
+    width: 32%;
+    background-color: #1d1d8c;
+}
+
+footer{
+    height: 90vh;
+    background-color:  #2727d5;
+}
+
+header, section, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    opacity: 80%;
+}
