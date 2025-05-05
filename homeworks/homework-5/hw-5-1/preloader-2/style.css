@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: deepskyblue;
+    animation: water 1s infinite linear;
+}
+@keyframes water {
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+    10%{
+        width: 30px;
+        transform: translateY(10px);
+    }
+    20%{
+        width: 10px;
+        height: 30px;
+        transform: translateY(20px);
+    }
+    30%{
+        transform: translateY(200px);
+    }
+    90%{
+        background-color: rgba(0, 191, 255, 0.3);
+        width: 65px;
+    }
+    100%{
+        width: 70px;
+        height: 30px;
+        transform: translateY(210px);
+        background-color: rgba(0, 191, 255, 0);
+    }
+}
