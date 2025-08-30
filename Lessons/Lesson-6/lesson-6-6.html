@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  <style>
+    label{
+      display: block;
+      margin-top: 10px;
+    }
+    form sup{
+      color: red;
+    }
+    textarea{
+        resize: none;
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+<form class="form-registration">
+  <label for="name">Введіть своє імя</label>
+  <input type="text" name="firstname" id="name" placeholder="First Name" required> <sup>*</sup>
+
+  <label for="email">Введіть свій email</label>
+  <input type="email" name="email" id="email" placeholder="example@gmail.com" required> <sup>*</sup>
+
+  <label for="password">Введіть свій email</label>
+  <input type="password" name="password" id="password" placeholder="password" required> <sup>*</sup>
+
+    <label for="age">Введіть свій email</label>
+    <input type="number" name="age" id="age" placeholder="age" min="0" max="100" required> <sup>*</sup>
+    <input type="date" name="date">
+    <input type="time" name="time">
+
+    <label>Стать</label>
+    <label><input type="radio" name="gender" value="male">male</label>
+    <label><input type="radio" name="gender" value="female">female</label>
+
+    <label>
+        <input type="checkbox" name="remember">remember
+    </label>
+
+    <label for="country">country</label>
+    <select name="country" id="country">
+        <option value="">Choise country</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+    </select>
+
+    <label for="phone">Phone</label>
+    <select name="phone" id="phone">
+        <option value="">Choise phone</option>
+        <optgroup label="apple">
+            <option value="x">Iphone X</option>
+            <option value="xs">Iphone XS</option>
+            <option value="xr">Iphone XR</option>
+        </optgroup>
+        <optgroup label="samsung">
+            <option value="x">Iphone X</option>
+            <option value="xs">Iphone XS</option>
+            <option value="xr">Iphone XR</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" cols="30" rows="4"></textarea>
+
+    <div>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </div>
+</form>
+</body>
+</html>
